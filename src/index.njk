@@ -9,11 +9,11 @@ page_description: The Surrey Organists' Association supports churches and organi
 {% set hero_tagline = home.hero_tagline %}
 {% set hero_slim = false %}
 
-<p class="lede">{{ home.lede }}</p>
+<div class="lede">{{ home.lede | safe }}</div>
 
 {% for section in home.sections %}
 <h2 class="section-title">{{ section.title }}</h2>
-{{ section.body | md | safe }}
+{{ section.body | safe }}
 {% endfor %}
 
 <div class="contact" id="contact">

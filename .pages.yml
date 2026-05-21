@@ -70,15 +70,15 @@ content:
         type: string
       - name: lede
         label: Opening paragraph
-        type: text
+        type: rich-text
       - name: sections
         label: Page sections
-        description: Each section becomes a heading + paragraph on the home page. Drag to reorder.
+        description: Each section becomes a heading + content block on the home page. Drag to reorder.
         type: object
         list: true
         fields:
           - { name: title, label: Section heading, type: string }
-          - { name: body,  label: Section text,    type: markdown }
+          - { name: body,  label: Section text,    type: rich-text }
 
   # ---------- Events ----------
   - name: events_page
@@ -89,7 +89,7 @@ content:
     fields:
       - name: lede
         label: Intro paragraph (shown above the list of events)
-        type: text
+        type: rich-text
       - name: events
         label: Events
         description: Drag to reorder. Add a new entry for each event.
@@ -99,7 +99,7 @@ content:
           - { name: title,       label: 'Event title',          type: string }
           - { name: date_label,  label: 'Date & time (free text — e.g. "Saturday 28 February, 2pm")', type: string }
           - { name: location,    label: 'Location',             type: string }
-          - { name: description, label: 'Description',          type: markdown }
+          - { name: description, label: 'Description',          type: rich-text }
 
   # ---------- Find an organist ----------
   - name: find_an_organist_page
@@ -110,14 +110,14 @@ content:
     fields:
       - name: lede
         label: Opening paragraph
-        type: text
+        type: rich-text
       - name: sections
         label: Page sections
         type: object
         list: true
         fields:
           - { name: title, label: Heading, type: string }
-          - { name: body,  label: Text,    type: markdown }
+          - { name: body,  label: Text,    type: rich-text }
 
   # ---------- Organ Student Scheme ----------
   - name: organ_student_scheme_page
@@ -128,14 +128,14 @@ content:
     fields:
       - name: lede
         label: Opening paragraph
-        type: text
+        type: rich-text
       - name: sections
         label: Page sections
         type: object
         list: true
         fields:
           - { name: title, label: Heading, type: string }
-          - { name: body,  label: Text,    type: markdown }
+          - { name: body,  label: Text,    type: rich-text }
 
   # ---------- Organ Recitals ----------
   - name: organ_recitals_page
@@ -146,7 +146,7 @@ content:
     fields:
       - name: lede
         label: Opening paragraph
-        type: markdown
+        type: rich-text
       - name: venues
         label: Local venues
         type: object
@@ -157,4 +157,4 @@ content:
           - { name: url,     label: 'Website (optional)',   type: string, description: 'If set, the venue name will link to this URL.' }
       - name: footer_note
         label: Closing note at the bottom of the page
-        type: markdown
+        type: rich-text

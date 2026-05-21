@@ -9,11 +9,11 @@ page_description: Six free organ lessons for pianists and keyboard players in Su
 {% set hero_tagline = "Six free lessons for pianists and keyboard players curious about the organ." %}
 {% set hero_slim = true %}
 
-<p class="lede">{{ organ_student_scheme.lede }}</p>
+<div class="lede">{{ organ_student_scheme.lede | safe }}</div>
 
 {% for section in organ_student_scheme.sections %}
 <h2 class="section-title">{{ section.title }}</h2>
-{{ section.body | md | safe }}
+{{ section.body | safe }}
 {% endfor %}
 
 <div class="contact">

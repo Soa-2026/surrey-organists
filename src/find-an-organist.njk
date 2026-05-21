@@ -9,11 +9,11 @@ page_description: Help finding an organist for occasional or permanent positions
 {% set hero_tagline = "Help for churches with occasional and permanent vacancies." %}
 {% set hero_slim = true %}
 
-<p class="lede">{{ find_an_organist.lede }}</p>
+<div class="lede">{{ find_an_organist.lede | safe }}</div>
 
 {% for section in find_an_organist.sections %}
 <h2 class="section-title">{{ section.title }}</h2>
-{{ section.body | md | safe }}
+{{ section.body | safe }}
 {% endfor %}
 
 <div class="contact">

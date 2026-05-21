@@ -3,11 +3,11 @@
   "sections": [
     {
       "title": "Get in touch",
-      "body": "To request the contact list, please email [enquiries@surreyorganistsassociation.org](mailto:enquiries@surreyorganistsassociation.org)."
+      "body": "<p>To request the contact list, please email <a href=\"mailto:enquiries@surreyorganistsassociation.org\">enquiries@surreyorganistsassociation.org</a>.</p>"
     },
     {
       "title": "Other options",
-      "body": "**Advertise a vacancy.** You can also post organist opportunities on [Organists Online](https://www.organistsonline.org), a national platform widely used by churches.\n\n**Develop your own organist.** If your church is interested in growing an organist from within, our [Organ Student Scheme](/organ-student-scheme/) offers a route in. Students who come through the scheme are usually very loyal and committed to the church that supports them."
+      "body": "<p><strong>Advertise a vacancy.</strong> You can also post organist opportunities on <a href=\"https://www.organistsonline.org\">Organists Online</a>, a national platform widely used by churches.</p>\n<p><strong>Develop your own organist.</strong> If your church is interested in growing an organist from within, our <a href=\"/organ-student-scheme/\">Organ Student Scheme</a> offers a route in. Students who come through the scheme are usually very loyal and committed to the church that supports them.</p>"
     }
   ]
 }

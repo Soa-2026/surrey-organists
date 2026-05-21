@@ -9,7 +9,7 @@ page_description: Organ recitals held at venues across Surrey — Guildford, God
 {% set hero_tagline = "Regular recitals in venues across Surrey." %}
 {% set hero_slim = true %}
 
-<p class="lede">{{ organ_recitals.lede | mdInline | safe }}</p>
+<div class="lede">{{ organ_recitals.lede | safe }}</div>
 
 <h2 class="section-title">Local venues</h2>
 <div class="card-grid">
@@ -22,5 +22,5 @@ page_description: Organ recitals held at venues across Surrey — Guildford, God
 </div>
 
 <div class="contact">
-  {{ organ_recitals.footer_note | md | safe }}
+  {{ organ_recitals.footer_note | safe }}
 </div>

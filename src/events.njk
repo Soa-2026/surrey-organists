@@ -9,7 +9,7 @@ page_description: Upcoming Surrey Organists' Association events — workshops, t
 {% set hero_tagline = "Workshops, visits and recitals." %}
 {% set hero_slim = true %}
 
-<p class="lede">{{ events.lede }}</p>
+<div class="lede">{{ events.lede | safe }}</div>
 
 <ul class="events">
 {% for event in events.events %}
@@ -18,7 +18,7 @@ page_description: Upcoming Surrey Organists' Association events — workshops, t
     <p class="meta">
       {{ event.date_label }}{% if event.location %} &middot; {{ event.location }}{% endif %}
     </p>
-    {{ event.description | md | safe }}
+    {{ event.description | safe }}
   </li>
 {% endfor %}
 </ul>
