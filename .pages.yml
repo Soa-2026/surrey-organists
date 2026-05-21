@@ -152,8 +152,9 @@ content:
         type: object
         list: true
         fields:
-          - { name: name,    label: 'Venue name', type: string }
-          - { name: address, label: 'Address',    type: string }
+          - { name: name,    label: 'Venue name',           type: string }
+          - { name: address, label: 'Address',              type: string }
+          - { name: url,     label: 'Website (optional)',   type: string, description: 'If set, the venue name will link to this URL.' }
       - name: footer_note
         label: Closing note at the bottom of the page
         type: markdown

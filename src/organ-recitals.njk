@@ -15,7 +15,7 @@ page_description: Organ recitals held at venues across Surrey — Guildford, God
 <div class="card-grid">
 {% for venue in organ_recitals.venues %}
   <div class="card">
-    <h3>{{ venue.name }}</h3>
+    <h3>{% if venue.url %}<a href="{{ venue.url }}">{{ venue.name }}</a>{% else %}{{ venue.name }}{% endif %}</h3>
     <p class="meta">{{ venue.address }}</p>
   </div>
 {% endfor %}
