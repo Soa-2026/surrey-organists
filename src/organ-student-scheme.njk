@@ -1,0 +1,23 @@
+---
+layout: base.njk
+permalink: /organ-student-scheme/
+current_page: organ-student-scheme
+page_title: Organ Student Scheme
+page_description: Six free organ lessons for pianists and keyboard players in Surrey, run by the Surrey Organists' Association since 2014.
+---
+{% set hero_heading = "Organ Student Scheme" %}
+{% set hero_tagline = "Six free lessons for pianists and keyboard players curious about the organ." %}
+{% set hero_slim = true %}
+
+<p class="lede">{{ organ_student_scheme.lede }}</p>
+
+{% for section in organ_student_scheme.sections %}
+<h2 class="section-title">{{ section.title }}</h2>
+{{ section.body | md | safe }}
+{% endfor %}
+
+<div class="contact">
+  <h3>Contact</h3>
+  <p>{{ site.chair.name }}, {{ site.chair.role }}<br>
+    <a href="mailto:{{ site.chair.email }}">{{ site.chair.email }}</a> &middot; {{ site.chair.phone }}</p>
+</div>

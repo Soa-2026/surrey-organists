@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page_title %}{{ page_title }} — {% endif %}{{ site.title }}</title>
+<meta name="description" content="{{ page_description or site.tagline }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="/">{{ site.title }}<small>{{ site.tagline }}</small></a>
+    <button class="burger" aria-label="Toggle menu" aria-controls="nav" aria-expanded="false">&#9776;</button>
+    <nav class="primary" id="nav">
+      <ul>
+        <li><a href="/"{% if current_page == "home" %} aria-current="page"{% endif %}>Home</a></li>
+        <li><a href="/events/"{% if current_page == "events" %} aria-current="page"{% endif %}>Events</a></li>
+        <li><a href="/find-an-organist/"{% if current_page == "find-an-organist" %} aria-current="page"{% endif %}>Find an organist</a></li>
+        <li><a href="/organ-student-scheme/"{% if current_page == "organ-student-scheme" %} aria-current="page"{% endif %}>Student Scheme</a></li>
+        <li><a href="/organ-recitals/"{% if current_page == "organ-recitals" %} aria-current="page"{% endif %}>Recitals</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero{% if hero_slim %} slim{% endif %}">
+  <img class="hero-image" src="/images/hero-organ.jpg" alt="{% if current_page == 'home' %}A pipe organ console in a Surrey church{% endif %}">
+  <div class="hero-overlay">
+    <div class="hero-inner">
+      <h1>{{ hero_heading }}</h1>
+      {% if hero_tagline %}<p class="tagline">{{ hero_tagline }}</p>{% endif %}
+    </div>
+  </div>
+</section>
+
+<main>
+  {{ content | safe }}
+</main>
+
+<footer class="site-footer">
+  <p>&copy; {{ site.title }} &middot; Affiliated to the <a href="{{ site.affiliated_to.url }}">{{ site.affiliated_to.name }}</a></p>
+</footer>
+
+<script>
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('nav.primary');
+  burger?.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open);
+  });
+</script>
+
+</body>
+</html>

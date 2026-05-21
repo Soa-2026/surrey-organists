@@ -1,0 +1,26 @@
+{
+  "title": "Surrey Organists' Association",
+  "tagline": "Supporting churches and organists across Surrey",
+  "chair": {
+    "name": "Ian Church",
+    "role": "Chair",
+    "email": "enquiries@surreyorganistsassociation.org",
+    "phone": "07860 520686"
+  },
+  "secretary": {
+    "name": "Ian Wickens",
+    "role": "Secretary",
+    "email": "secretary@surreyorganistsassociation.org",
+    "phone": "01252 312410"
+  },
+  "membership": {
+    "full": 13,
+    "half": 6.5,
+    "student": 5,
+    "renewal_date": "1st October"
+  },
+  "affiliated_to": {
+    "name": "Incorporated Association of Organists",
+    "url": "https://www.iao.org.uk"
+  }
+}

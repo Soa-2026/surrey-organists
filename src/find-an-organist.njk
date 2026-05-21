@@ -1,0 +1,23 @@
+---
+layout: base.njk
+permalink: /find-an-organist/
+current_page: find-an-organist
+page_title: Find an organist
+page_description: Help finding an organist for occasional or permanent positions in churches across Surrey.
+---
+{% set hero_heading = "Find an organist" %}
+{% set hero_tagline = "Help for churches with occasional and permanent vacancies." %}
+{% set hero_slim = true %}
+
+<p class="lede">{{ find_an_organist.lede }}</p>
+
+{% for section in find_an_organist.sections %}
+<h2 class="section-title">{{ section.title }}</h2>
+{{ section.body | md | safe }}
+{% endfor %}
+
+<div class="contact">
+  <h3>Contact</h3>
+  <p>{{ site.chair.name }}, {{ site.chair.role }}<br>
+    <a href="mailto:{{ site.chair.email }}">{{ site.chair.email }}</a> &middot; {{ site.chair.phone }}</p>
+</div>

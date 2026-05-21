@@ -1,0 +1,14 @@
+{
+  "name": "surrey-organists",
+  "version": "1.0.0",
+  "description": "Surrey Organists' Association website",
+  "private": true,
+  "scripts": {
+    "build": "eleventy",
+    "dev": "eleventy --serve --port=8765"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "markdown-it": "^14.0.0"
+  }
+}

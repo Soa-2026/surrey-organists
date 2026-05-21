@@ -1,0 +1,26 @@
+---
+layout: base.njk
+permalink: /organ-recitals/
+current_page: organ-recitals
+page_title: Organ Recitals
+page_description: Organ recitals held at venues across Surrey — Guildford, Godalming, Camberley and beyond.
+---
+{% set hero_heading = "Organ Recitals" %}
+{% set hero_tagline = "Regular recitals in venues across Surrey." %}
+{% set hero_slim = true %}
+
+<p class="lede">{{ organ_recitals.lede | mdInline | safe }}</p>
+
+<h2 class="section-title">Local venues</h2>
+<div class="card-grid">
+{% for venue in organ_recitals.venues %}
+  <div class="card">
+    <h3>{{ venue.name }}</h3>
+    <p class="meta">{{ venue.address }}</p>
+  </div>
+{% endfor %}
+</div>
+
+<div class="contact">
+  {{ organ_recitals.footer_note | md | safe }}
+</div>

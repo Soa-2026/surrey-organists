@@ -1,0 +1,25 @@
+---
+layout: base.njk
+permalink: /
+current_page: home
+page_description: The Surrey Organists' Association supports churches and organists across Surrey — training, events, recitals and a placement service.
+---
+{% set page_title = "" %}
+{% set hero_heading = home.hero_heading %}
+{% set hero_tagline = home.hero_tagline %}
+{% set hero_slim = false %}
+
+<p class="lede">{{ home.lede }}</p>
+
+{% for section in home.sections %}
+<h2 class="section-title">{{ section.title }}</h2>
+{{ section.body | md | safe }}
+{% endfor %}
+
+<div class="contact" id="contact">
+  <h3>Contact us</h3>
+  <p><strong>General enquiries</strong> — {{ site.chair.name }}, {{ site.chair.role }}<br>
+    <a href="mailto:{{ site.chair.email }}">{{ site.chair.email }}</a> &middot; {{ site.chair.phone }}</p>
+  <p><strong>{{ site.secretary.role }}</strong> — {{ site.secretary.name }}<br>
+    <a href="mailto:{{ site.secretary.email }}">{{ site.secretary.email }}</a> &middot; {{ site.secretary.phone }}</p>
+</div>

@@ -1,0 +1,159 @@
+media:
+  - name: images
+    label: Images
+    input: src/images
+    output: /images
+    extensions: [jpg, jpeg, png, gif, webp, svg]
+
+content:
+  # ---------- Site-wide settings ----------
+  - name: site_settings
+    label: Site settings
+    type: file
+    path: src/_data/site.json
+    format: json
+    fields:
+      - name: title
+        label: Site name
+        type: string
+        required: true
+      - name: tagline
+        label: Tagline (shown under the site name)
+        type: string
+
+      - name: chair
+        label: Chair (general enquiries)
+        type: object
+        fields:
+          - { name: name,  label: Name,  type: string }
+          - { name: role,  label: Role label (e.g. "Chair"), type: string }
+          - { name: email, label: Email, type: string, pattern: { regex: '^[^@\s]+@[^@\s]+\.[^@\s]+$', message: 'Must be a valid email address' } }
+          - { name: phone, label: Phone, type: string }
+
+      - name: secretary
+        label: Secretary
+        type: object
+        fields:
+          - { name: name,  label: Name,  type: string }
+          - { name: role,  label: Role label, type: string }
+          - { name: email, label: Email, type: string }
+          - { name: phone, label: Phone, type: string }
+
+      - name: membership
+        label: Membership rates
+        type: object
+        fields:
+          - { name: full,    label: 'Full annual subscription (£)',          type: number }
+          - { name: half,    label: 'Half-year rate after 1 April (£)',       type: number }
+          - { name: student, label: 'Student rate (£)',                       type: number }
+          - { name: renewal_date, label: 'Renewal date (e.g. "1st October")', type: string }
+
+      - name: affiliated_to
+        label: Affiliated organisation (shown in footer)
+        type: object
+        fields:
+          - { name: name, label: Name, type: string }
+          - { name: url,  label: URL,  type: string }
+
+  # ---------- Home page ----------
+  - name: home_page
+    label: Home page
+    type: file
+    path: src/_data/home.json
+    format: json
+    fields:
+      - name: hero_heading
+        label: Big heading at the top
+        type: string
+      - name: hero_tagline
+        label: Subheading (shown under the big heading)
+        type: string
+      - name: lede
+        label: Opening paragraph
+        type: text
+      - name: sections
+        label: Page sections
+        description: Each section becomes a heading + paragraph on the home page. Drag to reorder.
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Section heading, type: string }
+          - { name: body,  label: Section text,    type: markdown }
+
+  # ---------- Events ----------
+  - name: events_page
+    label: Events
+    type: file
+    path: src/_data/events.json
+    format: json
+    fields:
+      - name: lede
+        label: Intro paragraph (shown above the list of events)
+        type: text
+      - name: events
+        label: Events
+        description: Drag to reorder. Add a new entry for each event.
+        type: object
+        list: true
+        fields:
+          - { name: title,       label: 'Event title',          type: string }
+          - { name: date_label,  label: 'Date & time (free text — e.g. "Saturday 28 February, 2pm")', type: string }
+          - { name: location,    label: 'Location',             type: string }
+          - { name: description, label: 'Description',          type: markdown }
+
+  # ---------- Find an organist ----------
+  - name: find_an_organist_page
+    label: Find an organist (page)
+    type: file
+    path: src/_data/find_an_organist.json
+    format: json
+    fields:
+      - name: lede
+        label: Opening paragraph
+        type: text
+      - name: sections
+        label: Page sections
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Heading, type: string }
+          - { name: body,  label: Text,    type: markdown }
+
+  # ---------- Organ Student Scheme ----------
+  - name: organ_student_scheme_page
+    label: Organ Student Scheme (page)
+    type: file
+    path: src/_data/organ_student_scheme.json
+    format: json
+    fields:
+      - name: lede
+        label: Opening paragraph
+        type: text
+      - name: sections
+        label: Page sections
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Heading, type: string }
+          - { name: body,  label: Text,    type: markdown }
+
+  # ---------- Organ Recitals ----------
+  - name: organ_recitals_page
+    label: Organ Recitals (page)
+    type: file
+    path: src/_data/organ_recitals.json
+    format: json
+    fields:
+      - name: lede
+        label: Opening paragraph
+        type: markdown
+      - name: venues
+        label: Local venues
+        type: object
+        list: true
+        fields:
+          - { name: name,    label: 'Venue name', type: string }
+          - { name: address, label: 'Address',    type: string }
+      - name: footer_note
+        label: Closing note at the bottom of the page
+        type: markdown

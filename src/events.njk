@@ -1,0 +1,29 @@
+---
+layout: base.njk
+permalink: /events/
+current_page: events
+page_title: Events
+page_description: Upcoming Surrey Organists' Association events — workshops, the AGM, recitals and visits.
+---
+{% set hero_heading = "Events" %}
+{% set hero_tagline = "Workshops, visits and recitals." %}
+{% set hero_slim = true %}
+
+<p class="lede">{{ events.lede }}</p>
+
+<ul class="events">
+{% for event in events.events %}
+  <li>
+    <h3>{{ event.title }}</h3>
+    <p class="meta">
+      {{ event.date_label }}{% if event.location %} &middot; {{ event.location }}{% endif %}
+    </p>
+    {{ event.description | md | safe }}
+  </li>
+{% endfor %}
+</ul>
+
+<div class="contact">
+  <h3>Questions about an event?</h3>
+  <p>Get in touch with the {{ site.secretary.role }}, {{ site.secretary.name }} — <a href="mailto:{{ site.secretary.email }}">{{ site.secretary.email }}</a> &middot; {{ site.secretary.phone }}.</p>
+</div>
