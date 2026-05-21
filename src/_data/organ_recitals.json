@@ -1,9 +1,14 @@
 {
   "lede": "Organ recitals are regularly held in venues across Surrey. For a full and up-to-date listing of recitals throughout the UK, by county or area, see [organrecitals.uk](https://www.organrecitals.uk).",
   "venues": [
-    { "name": "St Mary's Church", "address": "Quarry Street, Guildford", "url": "" },
-    { "name": "Godalming Parish Church", "address": "Godalming", "url": "" },
-    { "name": "High Cross Church", "address": "Camberley", "url": "" }
+    {
+      "name": "St Mary's Church",
+      "address": "Quarry Street, Guildford"
+    },
+    {
+      "name": "High Cross Church",
+      "address": "Camberley"
+    }
   ],
   "footer_note": "Got a recital to publicise? Drop us a line at [enquiries@surreyorganistsassociation.org](mailto:enquiries@surreyorganistsassociation.org)."
 }
