@@ -5,43 +5,55 @@
       "title": "AGM & Annual Recital",
       "date_label": "Saturday 28 February, 2pm",
       "location": "All Saints' Church, Woodham, Woking GU21 5SH",
-      "description": "<p>Join us for our AGM, followed by tea before Tom Bell’s President’s Recital, featuring the newly restored and expanded Harrison organ.</p>"
+      "description": "Join us for our AGM, followed by tea before Tom Bell’s President’s Recital, featuring the newly restored and expanded Harrison organ."
     },
     {
       "title": "London Organ Day",
       "date_label": "Saturday 14 March",
       "location": "The Guards Chapel, Westminster",
-      "description": "<p>An opportunity to experience the large new Harrison &amp; Harrison at the 40th LOD — Tom Bell’s final year as Artistic Director. More at <a href=\"https://iao.org.uk/london-organ-day/\">iao.org.uk/london-organ-day</a>.</p>"
+      "description": "An opportunity to experience the large new Harrison & Harrison at the 40th LOD — Tom Bell’s final year as Artistic Director. More at [iao.org.uk/london-organ-day](https://iao.org.uk/london-organ-day/)."
     },
     {
       "title": "Godalming Performing Arts Festival",
       "date_label": "Monday 16 March, 5pm",
       "location": "Godalming Parish Church GU7 1EW",
-      "description": "<p>The organ classes at the annual Godalming festival showcase performers from those who have recently started learning to those with many years of experience. No advance booking required for audience members.</p>"
+      "description": "The organ classes at the annual Godalming festival showcase performers from those who have recently started learning to those with many years of experience. No advance booking required for audience members."
     },
     {
       "title": "Registration Workshop",
       "date_label": "Saturday 2 May, 2:30–4:30pm",
       "location": "St Mary's Church, West Horsley KT24 6TA",
-      "description": "<p>Explore the 2-manual Frobenius organ with its baroque characteristics. Bring music to experiment with suitable registrations.</p>"
+      "description": "Explore the 2-manual Frobenius organ with its baroque characteristics. Bring music to experiment with suitable registrations."
     },
     {
       "title": "Play the Organ at Canterbury Cathedral",
       "date_label": "Saturday 23 May, 5:30–8:30pm",
       "location": "Canterbury Cathedral",
-      "description": "<p>A very special opportunity to play the amazing 89-stop, 4-manual 2020 Harrison &amp; Harrison organ.</p>"
+      "description": "A very special opportunity to play the amazing 89-stop, 4-manual 2020 Harrison & Harrison organ."
+    },
+    {
+      "title": "Improvisation Workshop",
+      "date_label": "Saturday 20th June, 2.30-4.30pm",
+      "location": "St Christopher's, Haslemere GU27 1DD",
+      "description": "A workshop on basic improvisation for those who've recently started to play in services, or who are reluctant to try. "
+    },
+    {
+      "title": "Organ Masterclass, (combined Organ Club & SOA event)",
+      "date_label": "Saturday 26th September, 2.30-4.30pm",
+      "location": "Guildford URC",
+      "description": "A 'masterclass' event directed by Peter Wright (previously at Southwark and Guildford Cathedrals)"
     },
     {
       "title": "Composer Workshop",
       "date_label": "Saturday 10 October, 2:30–4:30pm",
       "location": "St Thomas-on-The-Bourne GU9 8HA",
-      "description": "<p>A continuation of our pre-covid ‘composer’ series, directed by Julian Cooper.</p>"
+      "description": "A continuation of our pre-covid ‘composer’ series, directed by Julian Cooper."
     },
     {
-      "title": "Improvisation Workshop",
-      "date_label": "Date to be confirmed",
-      "location": "",
-      "description": "<p>A workshop on basic improvisation. Details will be circulated to members and posted here once confirmed.</p>"
+      "title": "Members' Recital and dinner",
+      "date_label": "Saturday 14th November, recital at 5pm, followed by dinner",
+      "location": "All Saints' Church, Woodham GU21 5SH",
+      "description": "Our annual Members' Recital, with a chance ti play the recently refurbished Harrison & Harrison organ. Members can practice earlier in the afternoon, perform the recital, and then join together for dinner at a nearby restaurant. "
     }
   ]
 }
